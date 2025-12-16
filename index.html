@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>MADE — DevOps Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <div class="page">
+            <!-- Background shapes and decorative elements -->
+            <div class="bg-shape" aria-hidden="true">
+                <img
+                    src="https://api.builder.io/api/v1/image/assets/TEMP/7b217bbd86654cc1ba563c531262444fe529a52c?width=3698"
+                    alt=""
+                />
+            </div>
+
+            <div class="content">
+                <!-- Top Navigation -->
+                <nav class="nav container" aria-label="Primary">
+                    <div class="nav-row">
+                        <div class="nav-links nav-left">
+                            <a href="#home">Home</a>
+                            <a href="#about">About</a>
+                            <details class="dropdown">
+                                <summary>Services</summary>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#services">Category 1</a></li>
+                                    <li><a href="#services">Category 2</a></li>
+                                    <li><a href="#services">Category 3</a></li>
+                                </ul>
+                            </details>
+                        </div>
+
+                        <button class="icon-btn grid-icon" aria-label="Grid view">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <rect x="3" y="3" width="7" height="7" rx="1"/>
+                                <rect x="14" y="3" width="7" height="7" rx="1"/>
+                                <rect x="3" y="14" width="7" height="7" rx="1"/>
+                                <rect x="14" y="14" width="7" height="7" rx="1"/>
+                            </svg>
+                        </button>
+
+                        <div class="brand" aria-label="Site name">MADE</div>
+
+                        <div class="nav-links nav-right">
+                            <a href="#contact">Contact</a>
+                            <a href="#blog">Blog</a>
+                        </div>
+                        
+                        <label for="nav-toggle" class="icon-btn burger" aria-label="Open menu">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/>
+                            </svg>
+                        </label>
+                    </div>
+
+                    <!-- Mobile burger: CSS-only panel -->
+                    <input type="checkbox" id="nav-toggle" class="visually-hidden" />
+                    <aside class="mobile-menu" aria-label="Mobile Navigation">
+                        <div class="mobile-menu-header">
+                            <div class="brand">MADE</div>
+                            <label for="nav-toggle" class="icon-btn" aria-label="Close menu">✕</label>
+                        </div>
+                        <nav class="mobile-links">
+                            <a href="#home" onclick="this.closest('aside').previousElementSibling.checked=false">Home</a>
+                            <a href="#about" onclick="this.closest('aside').previousElementSibling.checked=false">About</a>
+                            <details class="dropdown mobile">
+                                <summary>Services</summary>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#services" onclick="this.closest('aside').previousElementSibling.checked=false">Category 1</a></li>
+                                    <li><a href="#services" onclick="this.closest('aside').previousElementSibling.checked=false">Category 2</a></li>
+                                    <li><a href="#services" onclick="this.closest('aside').previousElementSibling.checked=false">Category 3</a></li>
+                                </ul>
+                            </details>
+                            <a href="#contact" onclick="this.closest('aside').previousElementSibling.checked=false">Contact</a>
+                            <a href="#blog" onclick="this.closest('aside').previousElementSibling.checked=false">Blog</a>
+                        </nav>
+                    </aside>
+                </nav>
+
+                <!-- Hero Section -->
+                <section id="home" class="section container hero">
+                    <div class="divider thin"></div>
+
+                    <div class="hero-grid">
+                        <div class="hero-text">
+                            <h1 class="hero-title">
+                                <span class="hero-title-desktop">HI –<br />I'M MYROSLAV</span>
+                                <span class="hero-title-mobile">HI<br />I'M MYROSLAV</span>
+                                <span class="icon-arrow" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M7 17L17 7M7 7h10v10" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </h1>
+                            <p class="lead">
+                                <span class="lead-desktop">I deliver fresh, high-level open DevOps for fast, scalable infrastructure. DevSecOps ensures rock-solid security layers are embedded into every pipeline. I also leverage AI innovations, ready for immediate impact and results.</span>
+                                <span class="lead-mobile">And i can provide features or technology in your busines</span>
+                            </p>
+                            <div class="roles">
+                                <span class="roles-desktop">DEVOPS ENGINEER &<br />SEC, ML/AI REPAIR MASTER</span>
+                                <span class="roles-mobile">I CAN BE FOR YOU<br />+ DEVOPS ENGINEER<br />+ DEVSECOPS ENGINEER<br />+ AI/ML ENGINEER</span>
+                            </div>
+                        </div>
+
+                        <div class="hero-figure">
+                            <img
+                                src="./Photo.png"
+                                alt="Myroslav photo"
+                                class="rounded"
+                            />
+                        </div>
+                    </div>
+                </section>
+
+                <!-- About Section -->
+                <section id="about" class="section container about">
+                    <div class="divider"></div>
+
+                    <div class="about-grid">
+                        <div class="about-stats">
+                            <div class="stat">
+                                <div class="stat-value">1+</div>
+                                <div class="stat-label">YEAR EXPERIENCE</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">5+</div>
+                                <div class="stat-label">PROJECT COMPLETE</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">96%</div>
+                                <div class="stat-label">HAPPY CUSTOMER</div>
+                            </div>
+
+                            <img
+                                src="https://api.builder.io/api/v1/image/assets/TEMP/c99903010b967d4234cb55ef47abafece0dd0815?width=600"
+                                alt="Binary code"
+                                class="about-binary rounded"
+                            />
+                        </div>
+
+                        <div class="about-copy">
+                            <div class="about-block">
+                                <h2 class="h2">
+                                    THE NEXT GENERATION OF DEVOPS: FRESH SKILLS, SECURITY LAYERS, ML AND LLM INNOVATIONS.
+                                </h2>
+                                <p class="body">
+                                    My focus is on creating robust, scalable infrastructure with tools like Kubernetes, Terraform, and a deep understanding of CI/CD pipelines.
+                                </p>
+                            </div>
+
+                            <div class="about-block">
+                                <h3 class="h3">MY GOAL?</h3>
+                                <p class="body">
+                                    My goal is to deliver immediate value through modern, clean Infrastructure as Code (IaC). As a next-generation DevOps aspirant, I integrate DevSecOps security layers directly into CI/CD pipelines and leverage ML/LLM innovations.
+                                </p>
+                            </div>
+
+                            <div class="about-block">
+                                <h3 class="h3">DEVOPS ENGINEER WITH A SECURITY,<br />ML/AI LLM AND REPAIR SKILLS</h3>
+                                <p class="body">
+                                    I blend core automation expertise (IaC, CI/CD) with a strong foundation in DevSecOps, ensuring security is embedded, not bolted on. My unique skill set includes leveraging ML/AI and LLM tools for predictive system maintenance and smarter monitoring, alongside practical repair and troubleshooting skills to guarantee maximum uptime. Ready to deliver innovative, future-proof solutions.
+                                </p>
+
+                                <img
+                                    src="https://api.builder.io/api/v1/image/assets/TEMP/ff65c17f56bb29467a14319c154350db47c0703e?width=1092"
+                                    alt="Infrastructure"
+                                    class="rounded"
+                                />
+                            </div>
+
+                            <p>
+                                <a class="btn btn-outline" href="#contact">CONTACT US
+                                    <span aria-hidden="true" class="btn-icon">
+                                        <svg width="24" height="24" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M2.91669 3.5H25.0834V19.8333H7.58335L2.91669 23.9167V3.5Z" stroke-linecap="square"/>
+                                            <path d="M8.17135 11.6667H8.16669V11.662H8.17135V11.6667ZM14.0047 11.6667H14V11.662H14.0047V11.6667ZM19.838 11.6667H19.8334V11.662H19.838V11.6667Z" stroke-linecap="square"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Cases Section -->
+                <section id="cases" class="section container cases-section">
+                    <div class="divider strong"></div>
+
+                    <header class="section-header">
+                        <h2 class="h1">CASES</h2>
+                        <h3 class="kicker">OUR SOLUTIONS, YOUR SUCCESS</h3>
+                        <p class="sublead">Real-world problems, impactful results.</p>
+                    </header>
+
+                    <div class="cases">
+                        <!-- CSS-only filter controls -->
+                        <div class="filters" role="tablist" aria-label="Case filters">
+                            <input type="radio" id="filter-all" name="cases-filter" class="visually-hidden" checked />
+                            <label class="filter-btn" for="filter-all" role="tab" aria-controls="cases-grid">ALL</label>
+
+                            <input type="radio" id="filter-ecom" name="cases-filter" class="visually-hidden" />
+                            <label class="filter-btn" for="filter-ecom" role="tab" aria-controls="cases-grid">E-COMMERCE</label>
+
+                            <input type="radio" id="filter-saas" name="cases-filter" class="visually-hidden" />
+                            <label class="filter-btn" for="filter-saas" role="tab" aria-controls="cases-grid">SAAS</label>
+
+                            <input type="radio" id="filter-cloud" name="cases-filter" class="visually-hidden" />
+                            <label class="filter-btn" for="filter-cloud" role="tab" aria-controls="cases-grid">CLOUD MIGRATION</label>
+                        </div>
+
+                        <div id="cases-grid" class="cases-grid" aria-live="polite">
+                            <!-- 9 example cards, 3 per category -->
+                            <article class="case-card" data-cat="E-COMMERCE">
+                                <h4 class="card-title">FINTECH INFRA OPTIMIZATION</h4>
+                                <p class="card-desc">Reduced operational costs & improved deployment frequency.</p>
+                                <div class="card-icons">
+                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" aria-hidden="true">
+                                        <path d="M10.74 10.75L12 8L13.25 10.75L16 12L13.25 13.26L12 16L10.74 13.26L8 12L10.74 10.75Z" fill="white"/>
+                                    </svg>
+                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" aria-hidden="true">
+                                        <path d="M11.7429 1.22218H21.9671L11.3537 32.6686C11.2447 32.9918 11.037 33.2727 10.7599 33.4717C10.4828 33.6707 10.1503 33.7776 9.80918 33.7776H1.85252C1.5941 33.7776 1.3394 33.7161 1.10946 33.5981C0.879529 33.4802 0.680963 33.3092 0.53018 33.0993C0.379335 32.8895 0.280681 32.6467 0.242397 32.3912C0.204113 32.1356 0.227302 31.8746 0.310041 31.6297L10.1984 2.33092C10.3076 2.00774 10.5153 1.7269 10.7923 1.52792C11.0694 1.32894 11.4018 1.22184 11.7429 1.22168V1.22218Z" fill="url(#g1)"/>
+                                        <defs>
+                                            <linearGradient id="g1" x1="15.4695" y1="3.63466" x2="4.85154" y2="35.0022">
+                                                <stop stop-color="white"/>
+                                                <stop offset="0.418269" stop-color="#2F61CC"/>
+                                                <stop offset="1" stop-color="white"/>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" aria-hidden="true">
+                                        <path d="M17.3335 3.34909C16.179 3.35456 15.0771 3.45273 14.1069 3.62445C11.2495 4.12921 10.731 5.18577 10.731 7.13456V9.70788H17.483V10.5657H8.19683C6.23464 10.5657 4.51636 11.745 3.97878 13.9894C3.35863 16.561 3.33128 18.1661 3.97878 20.8516C4.45867 22.8507 5.60492 24.2747 7.56738 24.2747H9.88913V21.1898C9.88913 18.961 11.8171 16.9953 14.1072 16.9953H20.8515C22.7289 16.9953 24.2274 15.4493 24.2274 13.5642V7.13484C24.2274 5.30472 22.6835 3.93015 20.8515 3.62472C19.691 3.43167 18.4876 3.3439 17.3335 3.34909Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <div class="rule"></div>
+                                <div class="kpi"><span class="kpi-value">80%</span> <span class="kpi-label">REDUCTION</span></div>
+                            </article>
+
+                            <article class="case-card" data-cat="SAAS">
+                                <h4 class="card-title">FINTECH INFRA OPTIMIZATION</h4>
+                                <p class="card-desc">Reduced operational costs & improved deployment frequency.</p>
+                                <div class="card-icons">
+                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" aria-hidden="true">
+                                        <path d="M10.74 10.75L12 8L13.25 10.75L16 12L13.25 13.26L12 16L10.74 13.26L8 12L10.74 10.75Z" fill="white"/>
+                                    </svg>
+                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" aria-hidden="true">
+                                        <path d="M11.7429 1.22218H21.9671L11.3537 32.6686C11.2447 32.9918 11.037 33.2727 10.7599 33.4717C10.4828 33.6707 10.1503 33.7776 9.80918 33.7776H1.85252C1.5941 33.7776 1.3394 33.7161 1.10946 33.5981C0.879529 33.4802 0.680963 33.3092 0.53018 33.0993C0.379335 32.8895 0.280681 32.6467 0.242397 32.3912C0.204113 32.1356 0.227302 31.8746 0.310041 31.6297L10.1984 2.33092C10.3076 2.00774 10.5153 1.7269 10.7923 1.52792C11.0694 1.32894 11.4018 1.22184 11.7429 1.22168V1.22218Z" fill="url(#g2)"/>
+                                        <defs>
+                                            <linearGradient id="g2" x1="15.4695" y1="3.63466" x2="4.85154" y2="35.0022">
+                                                <stop stop-color="white"/>
+                                                <stop offset="0.418269" stop-color="#2F61CC"/>
+                                                <stop offset="1" stop-color="white"/>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" aria-hidden="true">
+                                        <path d="M17.3335 3.34909C16.179 3.35456 15.0771 3.45273 14.1069 3.62445C11.2495 4.12921 10.731 5.18577 10.731 7.13456V9.70788H17.483V10.5657H8.19683C6.23464 10.5657 4.51636 11.745 3.97878 13.9894C3.35863 16.561 3.33128 18.1661 3.97878 20.8516C4.45867 22.8507 5.60492 24.2747 7.56738 24.2747H9.88913V21.1898C9.88913 18.961 11.8171 16.9953 14.1072 16.9953H20.8515C22.7289 16.9953 24.2274 15.4493 24.2274 13.5642V7.13484C24.2274 5.30472 22.6835 3.93015 20.8515 3.62472C19.691 3.43167 18.4876 3.3439 17.3335 3.34909Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <div class="rule"></div>
+                                <div class="kpi"><span class="kpi-value">80%</span> <span class="kpi-label">REDUCTION</span></div>
+                            </article>
+
+                            <article class="case-card" data-cat="CLOUD MIGRATION">
+                                <h4 class="card-title">FINTECH INFRA OPTIMIZATION</h4>
+                                <p class="card-desc">Reduced operational costs & improved deployment frequency.</p>
+                                <div class="card-icons">
+                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" aria-hidden="true">
+                                        <path d="M10.74 10.75L12 8L13.25 10.75L16 12L13.25 13.26L12 16L10.74 13.26L8 12L10.74 10.75Z" fill="white"/>
+                                    </svg>
+                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" aria-hidden="true">
+                                        <path d="M11.7429 1.22218H21.9671L11.3537 32.6686C11.2447 32.9918 11.037 33.2727 10.7599 33.4717C10.4828 33.6707 10.1503 33.7776 9.80918 33.7776H1.85252C1.5941 33.7776 1.3394 33.7161 1.10946 33.5981C0.879529 33.4802 0.680963 33.3092 0.53018 33.0993C0.379335 32.8895 0.280681 32.6467 0.242397 32.3912C0.204113 32.1356 0.227302 31.8746 0.310041 31.6297L10.1984 2.33092C10.3076 2.00774 10.5153 1.7269 10.7923 1.52792C11.0694 1.32894 11.4018 1.22184 11.7429 1.22168V1.22218Z" fill="url(#g3)"/>
+                                        <defs>
+                                            <linearGradient id="g3" x1="15.4695" y1="3.63466" x2="4.85154" y2="35.0022">
+                                                <stop stop-color="white"/>
+                                                <stop offset="0.418269" stop-color="#2F61CC"/>
+                                                <stop offset="1" stop-color="white"/>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" aria-hidden="true">
+                                        <path d="M17.3335 3.34909C16.179 3.35456 15.0771 3.45273 14.1069 3.62445C11.2495 4.12921 10.731 5.18577 10.731 7.13456V9.70788H17.483V10.5657H8.19683C6.23464 10.5657 4.51636 11.745 3.97878 13.9894C3.35863 16.561 3.33128 18.1661 3.97878 20.8516C4.45867 22.8507 5.60492 24.2747 7.56738 24.2747H9.88913V21.1898C9.88913 18.961 11.8171 16.9953 14.1072 16.9953H20.8515C22.7289 16.9953 24.2274 15.4493 24.2274 13.5642V7.13484C24.2274 5.30472 22.6835 3.93015 20.8515 3.62472C19.691 3.43167 18.4876 3.3439 17.3335 3.34909Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <div class="rule"></div>
+                                <div class="kpi"><span class="kpi-value">80%</span> <span class="kpi-label">REDUCTION</span></div>
+                            </article>
+
+                            <article class="case-card" data-cat="E-COMMERCE">
+                                <h4 class="card-title">FINTECH INFRA OPTIMIZATION</h4>
+                                <p class="card-desc">Reduced operational costs & improved deployment frequency.</p>
+                                <div class="card-icons">
+                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" aria-hidden="true">
+                                        <path d="M10.74 10.75L12 8L13.25 10.75L16 12L13.25 13.26L12 16L10.74 13.26L8 12L10.74 10.75Z" fill="white"/>
+                                    </svg>
+                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" aria-hidden="true">
+                                        <path d="M11.7429 1.22218H21.9671L11.3537 32.6686C11.2447 32.9918 11.037 33.2727 10.7599 33.4717C10.4828 33.6707 10.1503 33.7776 9.80918 33.7776H1.85252C1.5941 33.7776 1.3394 33.7161 1.10946 33.5981C0.879529 33.4802 0.680963 33.3092 0.53018 33.0993C0.379335 32.8895 0.280681 32.6467 0.242397 32.3912C0.204113 32.1356 0.227302 31.8746 0.310041 31.6297L10.1984 2.33092C10.3076 2.00774 10.5153 1.7269 10.7923 1.52792C11.0694 1.32894 11.4018 1.22184 11.7429 1.22168V1.22218Z" fill="url(#g4)"/>
+                                        <defs>
+                                            <linearGradient id="g4" x1="15.4695" y1="3.63466" x2="4.85154" y2="35.0022">
+                                                <stop stop-color="white"/>
+                                                <stop offset="0.418269" stop-color="#2F61CC"/>
+                                                <stop offset="1" stop-color="white"/>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" aria-hidden="true">
+                                        <path d="M17.3335 3.34909C16.179 3.35456 15.0771 3.45273 14.1069 3.62445C11.2495 4.12921 10.731 5.18577 10.731 7.13456V9.70788H17.483V10.5657H8.19683C6.23464 10.5657 4.51636 11.745 3.97878 13.9894C3.35863 16.561 3.33128 18.1661 3.97878 20.8516C4.45867 22.8507 5.60492 24.2747 7.56738 24.2747H9.88913V21.1898C9.88913 18.961 11.8171 16.9953 14.1072 16.9953H20.8515C22.7289 16.9953 24.2274 15.4493 24.2274 13.5642V7.13484C24.2274 5.30472 22.6835 3.93015 20.8515 3.62472C19.691 3.43167 18.4876 3.3439 17.3335 3.34909Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <div class="rule"></div>
+                                <div class="kpi"><span class="kpi-value">80%</span> <span class="kpi-label">REDUCTION</span></div>
+                            </article>
+
+                            <article class="case-card" data-cat="SAAS">
+                                <h4 class="card-title">FINTECH INFRA OPTIMIZATION</h4>
+                                <p class="card-desc">Reduced operational costs & improved deployment frequency.</p>
+                                <div class="card-icons">
+                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" aria-hidden="true">
+                                        <path d="M10.74 10.75L12 8L13.25 10.75L16 12L13.25 13.26L12 16L10.74 13.26L8 12L10.74 10.75Z" fill="white"/>
+                                    </svg>
+                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" aria-hidden="true">
+                                        <path d="M11.7429 1.22218H21.9671L11.3537 32.6686C11.2447 32.9918 11.037 33.2727 10.7599 33.4717C10.4828 33.6707 10.1503 33.7776 9.80918 33.7776H1.85252C1.5941 33.7776 1.3394 33.7161 1.10946 33.5981C0.879529 33.4802 0.680963 33.3092 0.53018 33.0993C0.379335 32.8895 0.280681 32.6467 0.242397 32.3912C0.204113 32.1356 0.227302 31.8746 0.310041 31.6297L10.1984 2.33092C10.3076 2.00774 10.5153 1.7269 10.7923 1.52792C11.0694 1.32894 11.4018 1.22184 11.7429 1.22168V1.22218Z" fill="url(#g5)"/>
+                                        <defs>
+                                            <linearGradient id="g5" x1="15.4695" y1="3.63466" x2="4.85154" y2="35.0022">
+                                                <stop stop-color="white"/>
+                                                <stop offset="0.418269" stop-color="#2F61CC"/>
+                                                <stop offset="1" stop-color="white"/>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" aria-hidden="true">
+                                        <path d="M17.3335 3.34909C16.179 3.35456 15.0771 3.45273 14.1069 3.62445C11.2495 4.12921 10.731 5.18577 10.731 7.13456V9.70788H17.483V10.5657H8.19683C6.23464 10.5657 4.51636 11.745 3.97878 13.9894C3.35863 16.561 3.33128 18.1661 3.97878 20.8516C4.45867 22.8507 5.60492 24.2747 7.56738 24.2747H9.88913V21.1898C9.88913 18.961 11.8171 16.9953 14.1072 16.9953H20.8515C22.7289 16.9953 24.2274 15.4493 24.2274 13.5642V7.13484C24.2274 5.30472 22.6835 3.93015 20.8515 3.62472C19.691 3.43167 18.4876 3.3439 17.3335 3.34909Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <div class="rule"></div>
+                                <div class="kpi"><span class="kpi-value">80%</span> <span class="kpi-label">REDUCTION</span></div>
+                            </article>
+
+                            <article class="case-card" data-cat="CLOUD MIGRATION">
+                                <h4 class="card-title">FINTECH INFRA OPTIMIZATION</h4>
+                                <p class="card-desc">Reduced operational costs & improved deployment frequency.</p>
+                                <div class="card-icons">
+                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" aria-hidden="true">
+                                        <path d="M10.74 10.75L12 8L13.25 10.75L16 12L13.25 13.26L12 16L10.74 13.26L8 12L10.74 10.75Z" fill="white"/>
+                                    </svg>
+                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" aria-hidden="true">
+                                        <path d="M11.7429 1.22218H21.9671L11.3537 32.6686C11.2447 32.9918 11.037 33.2727 10.7599 33.4717C10.4828 33.6707 10.1503 33.7776 9.80918 33.7776H1.85252C1.5941 33.7776 1.3394 33.7161 1.10946 33.5981C0.879529 33.4802 0.680963 33.3092 0.53018 33.0993C0.379335 32.8895 0.280681 32.6467 0.242397 32.3912C0.204113 32.1356 0.227302 31.8746 0.310041 31.6297L10.1984 2.33092C10.3076 2.00774 10.5153 1.7269 10.7923 1.52792C11.0694 1.32894 11.4018 1.22184 11.7429 1.22168V1.22218Z" fill="url(#g6)"/>
+                                        <defs>
+                                            <linearGradient id="g6" x1="15.4695" y1="3.63466" x2="4.85154" y2="35.0022">
+                                                <stop stop-color="white"/>
+                                                <stop offset="0.418269" stop-color="#2F61CC"/>
+                                                <stop offset="1" stop-color="white"/>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" aria-hidden="true">
+                                        <path d="M17.3335 3.34909C16.179 3.35456 15.0771 3.45273 14.1069 3.62445C11.2495 4.12921 10.731 5.18577 10.731 7.13456V9.70788H17.483V10.5657H8.19683C6.23464 10.5657 4.51636 11.745 3.97878 13.9894C3.35863 16.561 3.33128 18.1661 3.97878 20.8516C4.45867 22.8507 5.60492 24.2747 7.56738 24.2747H9.88913V21.1898C9.88913 18.961 11.8171 16.9953 14.1072 16.9953H20.8515C22.7289 16.9953 24.2274 15.4493 24.2274 13.5642V7.13484C24.2274 5.30472 22.6835 3.93015 20.8515 3.62472C19.691 3.43167 18.4876 3.3439 17.3335 3.34909Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <div class="rule"></div>
+                                <div class="kpi"><span class="kpi-value">80%</span> <span class="kpi-label">REDUCTION</span></div>
+                            </article>
+
+                            <article class="case-card" data-cat="E-COMMERCE">
+                                <h4 class="card-title">FINTECH INFRA OPTIMIZATION</h4>
+                                <p class="card-desc">Reduced operational costs & improved deployment frequency.</p>
+                                <div class="card-icons">
+                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" aria-hidden="true">
+                                        <path d="M10.74 10.75L12 8L13.25 10.75L16 12L13.25 13.26L12 16L10.74 13.26L8 12L10.74 10.75Z" fill="white"/>
+                                    </svg>
+                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" aria-hidden="true">
+                                        <path d="M11.7429 1.22218H21.9671L11.3537 32.6686C11.2447 32.9918 11.037 33.2727 10.7599 33.4717C10.4828 33.6707 10.1503 33.7776 9.80918 33.7776H1.85252C1.5941 33.7776 1.3394 33.7161 1.10946 33.5981C0.879529 33.4802 0.680963 33.3092 0.53018 33.0993C0.379335 32.8895 0.280681 32.6467 0.242397 32.3912C0.204113 32.1356 0.227302 31.8746 0.310041 31.6297L10.1984 2.33092C10.3076 2.00774 10.5153 1.7269 10.7923 1.52792C11.0694 1.32894 11.4018 1.22184 11.7429 1.22168V1.22218Z" fill="url(#g7)"/>
+                                        <defs>
+                                            <linearGradient id="g7" x1="15.4695" y1="3.63466" x2="4.85154" y2="35.0022">
+                                                <stop stop-color="white"/>
+                                                <stop offset="0.418269" stop-color="#2F61CC"/>
+                                                <stop offset="1" stop-color="white"/>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" aria-hidden="true">
+                                        <path d="M17.3335 3.34909C16.179 3.35456 15.0771 3.45273 14.1069 3.62445C11.2495 4.12921 10.731 5.18577 10.731 7.13456V9.70788H17.483V10.5657H8.19683C6.23464 10.5657 4.51636 11.745 3.97878 13.9894C3.35863 16.561 3.33128 18.1661 3.97878 20.8516C4.45867 22.8507 5.60492 24.2747 7.56738 24.2747H9.88913V21.1898C9.88913 18.961 11.8171 16.9953 14.1072 16.9953H20.8515C22.7289 16.9953 24.2274 15.4493 24.2274 13.5642V7.13484C24.2274 5.30472 22.6835 3.93015 20.8515 3.62472C19.691 3.43167 18.4876 3.3439 17.3335 3.34909Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <div class="rule"></div>
+                                <div class="kpi"><span class="kpi-value">80%</span> <span class="kpi-label">REDUCTION</span></div>
+                            </article>
+
+                            <article class="case-card" data-cat="SAAS">
+                                <h4 class="card-title">FINTECH INFRA OPTIMIZATION</h4>
+                                <p class="card-desc">Reduced operational costs & improved deployment frequency.</p>
+                                <div class="card-icons">
+                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" aria-hidden="true">
+                                        <path d="M10.74 10.75L12 8L13.25 10.75L16 12L13.25 13.26L12 16L10.74 13.26L8 12L10.74 10.75Z" fill="white"/>
+                                    </svg>
+                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" aria-hidden="true">
+                                        <path d="M11.7429 1.22218H21.9671L11.3537 32.6686C11.2447 32.9918 11.037 33.2727 10.7599 33.4717C10.4828 33.6707 10.1503 33.7776 9.80918 33.7776H1.85252C1.5941 33.7776 1.3394 33.7161 1.10946 33.5981C0.879529 33.4802 0.680963 33.3092 0.53018 33.0993C0.379335 32.8895 0.280681 32.6467 0.242397 32.3912C0.204113 32.1356 0.227302 31.8746 0.310041 31.6297L10.1984 2.33092C10.3076 2.00774 10.5153 1.7269 10.7923 1.52792C11.0694 1.32894 11.4018 1.22184 11.7429 1.22168V1.22218Z" fill="url(#g8)"/>
+                                        <defs>
+                                            <linearGradient id="g8" x1="15.4695" y1="3.63466" x2="4.85154" y2="35.0022">
+                                                <stop stop-color="white"/>
+                                                <stop offset="0.418269" stop-color="#2F61CC"/>
+                                                <stop offset="1" stop-color="white"/>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" aria-hidden="true">
+                                        <path d="M17.3335 3.34909C16.179 3.35456 15.0771 3.45273 14.1069 3.62445C11.2495 4.12921 10.731 5.18577 10.731 7.13456V9.70788H17.483V10.5657H8.19683C6.23464 10.5657 4.51636 11.745 3.97878 13.9894C3.35863 16.561 3.33128 18.1661 3.97878 20.8516C4.45867 22.8507 5.60492 24.2747 7.56738 24.2747H9.88913V21.1898C9.88913 18.961 11.8171 16.9953 14.1072 16.9953H20.8515C22.7289 16.9953 24.2274 15.4493 24.2274 13.5642V7.13484C24.2274 5.30472 22.6835 3.93015 20.8515 3.62472C19.691 3.43167 18.4876 3.3439 17.3335 3.34909Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <div class="rule"></div>
+                                <div class="kpi"><span class="kpi-value">80%</span> <span class="kpi-label">REDUCTION</span></div>
+                            </article>
+
+                            <article class="case-card" data-cat="CLOUD MIGRATION">
+                                <h4 class="card-title">FINTECH INFRA OPTIMIZATION</h4>
+                                <p class="card-desc">Reduced operational costs & improved deployment frequency.</p>
+                                <div class="card-icons">
+                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" aria-hidden="true">
+                                        <path d="M10.74 10.75L12 8L13.25 10.75L16 12L13.25 13.26L12 16L10.74 13.26L8 12L10.74 10.75Z" fill="white"/>
+                                    </svg>
+                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" aria-hidden="true">
+                                        <path d="M11.7429 1.22218H21.9671L11.3537 32.6686C11.2447 32.9918 11.037 33.2727 10.7599 33.4717C10.4828 33.6707 10.1503 33.7776 9.80918 33.7776H1.85252C1.5941 33.7776 1.3394 33.7161 1.10946 33.5981C0.879529 33.4802 0.680963 33.3092 0.53018 33.0993C0.379335 32.8895 0.280681 32.6467 0.242397 32.3912C0.204113 32.1356 0.227302 31.8746 0.310041 31.6297L10.1984 2.33092C10.3076 2.00774 10.5153 1.7269 10.7923 1.52792C11.0694 1.32894 11.4018 1.22184 11.7429 1.22168V1.22218Z" fill="url(#g9)"/>
+                                        <defs>
+                                            <linearGradient id="g9" x1="15.4695" y1="3.63466" x2="4.85154" y2="35.0022">
+                                                <stop stop-color="white"/>
+                                                <stop offset="0.418269" stop-color="#2F61CC"/>
+                                                <stop offset="1" stop-color="white"/>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" aria-hidden="true">
+                                        <path d="M17.3335 3.34909C16.179 3.35456 15.0771 3.45273 14.1069 3.62445C11.2495 4.12921 10.731 5.18577 10.731 7.13456V9.70788H17.483V10.5657H8.19683C6.23464 10.5657 4.51636 11.745 3.97878 13.9894C3.35863 16.561 3.33128 18.1661 3.97878 20.8516C4.45867 22.8507 5.60492 24.2747 7.56738 24.2747H9.88913V21.1898C9.88913 18.961 11.8171 16.9953 14.1072 16.9953H20.8515C22.7289 16.9953 24.2274 15.4493 24.2274 13.5642V7.13484C24.2274 5.30472 22.6835 3.93015 20.8515 3.62472C19.691 3.43167 18.4876 3.3439 17.3335 3.34909Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <div class="rule"></div>
+                                <div class="kpi"><span class="kpi-value">80%</span> <span class="kpi-label">REDUCTION</span></div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Services Section -->
+                <section id="services" class="section container services">
+                    <div class="divider strong"></div>
+
+                    <header class="section-header">
+                        <h2 class="h1 center">ACCELERATE | SECURE | INNOVATE.</h2>
+                        <p class="body center narrow">
+                            I deliver modern, multi-disciplinary DevOps solutions that maximize speed, guarantee security, and embed next-generation AI and ML practices for future-proof operations.
+                        </p>
+                    </header>
+
+                    <div class="service-grid">
+                        <!-- Category 1 -->
+                        <section aria-labelledby="cat1-title" class="service">
+                            <h3 id="cat1-title" class="service-title">CATEGORY 1</h3>
+                            <p class="service-sub">DEVOPS &amp; INFRASTRUCTURE AUTOMATION</p>
+
+                            <div class="card">
+                                <ul class="checklist">
+                                    <li>CI/CD SETUP &amp; OPTIMIZATION</li>
+                                    <li>INFRASTRUCTURE AS CODE</li>
+                                    <li>CONTAINERIZATION STRATEGY</li>
+                                    <li>KUBERNETES ORCHESTRATION</li>
+                                    <li>CLOUD COST OPTIMIZATION</li>
+                                    <li>VERSION CONTROL &amp; GIT WORKFLOW MANAGEMENT</li>
+                                </ul>
+                                <div class="rule"></div>
+                                <a href="#contact" class="apply-btn">APPLY</a>
+                            </div>
+                        </section>
+
+                        <!-- Category 2 -->
+                        <section aria-labelledby="cat2-title" class="service">
+                            <h3 id="cat2-title" class="service-title">CATEGORY 2</h3>
+                            <p class="service-sub">DEVSECOPS &amp; SYSTEM SECURITY RESILIENCE</p>
+
+                            <div class="card">
+                                <ul class="checklist">
+                                    <li>DEVSECOPS INTEGRATION</li>
+                                    <li>VULNERABILITY SCANNING</li>
+                                    <li>SECRET MANAGEMENT</li>
+                                    <li>MONITORING &amp; OBSERV</li>
+                                    <li>SYSTEM HEALTH &amp; REPAIR</li>
+                                    <li>BACKUP AND RECOVERY PLANNING</li>
+                                </ul>
+                                <div class="rule"></div>
+                                <a href="#contact" class="apply-btn">APPLY</a>
+                            </div>
+                        </section>
+
+                        <!-- Category 3 -->
+                        <section aria-labelledby="cat3-title" class="service">
+                            <h3 id="cat3-title" class="service-title">CATEGORY 3</h3>
+                            <p class="service-sub">ML/AI &amp; INNOVATION CONSULTING</p>
+
+                            <div class="card">
+                                <ul class="checklist">
+                                    <li>MLOPS INFRASTRUCTURE</li>
+                                    <li>DATA PIPELINE CONSULTING</li>
+                                    <li>AI-ASSISTED DOCUMENTATION</li>
+                                    <li>PREDICTIVE ALERTING</li>
+                                    <li>LLM FINE-TUNING ENVIRONMENT</li>
+                                    <li>INFRASTRUCTURE TREND ANALYSIS</li>
+                                </ul>
+                                <div class="rule"></div>
+                                <a href="#contact" class="apply-btn">APPLY</a>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="cta">
+                        <h3 class="h1 center">READY TO SEE REAL RESULTS?</h3>
+                        <p class="body center narrow">
+                            I deliver modern, multi-disciplinary DevOps solutions that maximize speed, guarantee security, and embed next-generation AI and ML practices for future-proof operations.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Contact Section -->
+                <section id="contact" class="section container contact">
+                    <div class="divider strong"></div>
+
+                    <div class="contact-wrap">
+                        <h2 class="h1 center">LET'S TALK</h2>
+                        <p class="body center">Are you interested to work together?</p>
+
+                        <form class="contact-form" action="#" method="post">
+                            <label>
+                                <span class="visually-hidden">Full Name</span>
+                                <input type="text" name="name" placeholder="Full Name" autocomplete="name" required />
+                            </label>
+                            <label>
+                                <span class="visually-hidden">Email</span>
+                                <input type="email" name="email" placeholder="Email" autocomplete="email" required />
+                            </label>
+                            <label>
+                                <span class="visually-hidden">Subject</span>
+                                <input type="text" name="subject" placeholder="Subject | Type of work" />
+                            </label>
+                            <label>
+                                <span class="visually-hidden">Message</span>
+                                <textarea name="message" rows="4" placeholder="Message"></textarea>
+                            </label>
+                            <div class="center">
+                                <button type="submit" class="btn btn-outline">Send</button>
+                            </div>
+                        </form>
+
+                        <div class="divider light"></div>
+
+                    </div>
+                </section>
+                
+                <footer class="footer container" role="contentinfo">
+                    <div class="divider light"></div>
+                    <div class="socials">
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <svg width="35" height="35" viewBox="0 0 35 35" fill="white" aria-hidden="true">
+                                <path d="M7.77778 3.88889C7.77778 5.95389 6.39722 7.73111 3.88694 7.73111C1.52444 7.73111 0 6.055 0 3.99C0 1.87056 1.47778 0 3.88889 0C6.3 0 7.73111 1.76944 7.77778 3.88889ZM0 35V9.72222H7.77778V35H0ZM11.6667 18.3633C11.6667 15.3592 11.5675 12.8489 11.4683 10.6808H18.4567L18.8028 14.0311H18.9506C19.9344 12.4542 22.3456 10.1422 26.3822 10.1422C31.3056 10.1422 35 13.4381 35 20.5294V35H27.2222V21.6592C27.2222 18.5597 26.0419 16.1953 23.3333 16.1953C21.2683 16.1953 20.2339 17.8675 19.6914 19.2461C19.4931 19.74 19.4444 20.4283 19.4444 21.1186V35H11.6667V18.3633Z"/>
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <svg width="35" height="35" viewBox="0 0 35 35" fill="white" aria-hidden="true">
+                                <path d="M29.75 1.75H5.25C3.325 1.75 1.75 3.325 1.75 5.25V29.75C1.75 31.6768 3.325 33.25 5.25 33.25H29.75C31.675 33.25 33.25 31.6768 33.25 29.75V5.25C33.25 3.325 31.675 1.75 29.75 1.75ZM17.472 27.1652C20.0424 27.1643 22.5072 26.1427 24.3245 24.325C26.1419 22.5073 27.163 20.0424 27.1635 17.472C27.1635 16.8805 27.0882 16.31 26.9832 15.75H29.75V28.378C29.75 28.537 29.7186 28.6945 29.6576 28.8413C29.5966 28.9882 29.5072 29.1215 29.3945 29.2337C29.2818 29.3459 29.1481 29.4347 29.001 29.4951C28.8538 29.5555 28.6963 29.5862 28.5372 29.5855H6.46275C6.30374 29.5862 6.14615 29.5555 5.99905 29.4951C5.85194 29.4347 5.71821 29.3459 5.60552 29.2337C5.49284 29.1215 5.40343 28.9882 5.34241 28.8413C5.2814 28.6945 5.25 28.537 5.25 28.378V15.75H7.96075C7.854 16.31 7.77875 16.8805 7.77875 17.472C7.77921 20.0427 8.80061 22.5079 10.6184 24.3256C12.4361 26.1434 14.9013 27.1648 17.472 27.1652ZM11.4152 17.472C11.4152 16.6766 11.5719 15.889 11.8763 15.1542C12.1807 14.4193 12.6268 13.7517 13.1892 13.1892C13.7517 12.6268 14.4193 12.1807 15.1542 11.8763C15.889 11.5719 16.6766 11.4152 17.472 11.4152C18.2674 11.4152 19.055 11.5719 19.7898 11.8763C20.5247 12.1807 21.1923 12.6268 21.7548 13.1892C22.3172 13.7517 22.7633 14.4193 23.0677 15.1542C23.3721 15.889 23.5287 16.6766 23.5287 17.472C23.5287 19.0784 22.8906 20.6189 21.7548 21.7548C20.6189 22.8906 19.0784 23.5287 17.472 23.5287C15.8657 23.5287 14.3251 22.8906 13.1892 21.7548C12.0534 20.6189 11.4152 19.0784 11.4152 17.472ZM28.5372 10.5H25.711C25.3901 10.4991 25.0826 10.3712 24.8557 10.1443C24.6288 9.91738 24.5009 9.60989 24.5 9.289V6.45925C24.5 5.79075 25.0425 5.25 25.7092 5.25H28.5355C29.2075 5.25 29.75 5.79075 29.75 6.45925V9.28725C29.75 9.954 29.2075 10.5 28.5372 10.5Z"/>
+                            </svg>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                            <svg width="35" height="35" viewBox="0 0 35 35" fill="white" aria-hidden="true">
+                                <path d="M17.5 4.0249C0.301 4.0249 0 5.5544 0 17.4999C0 29.4454 0.301 30.9749 17.5 30.9749C34.699 30.9749 35 29.4454 35 17.4999C35 5.5544 34.699 4.0249 17.5 4.0249ZM23.1087 18.0844L15.2513 21.7524C14.5635 22.0709 14 21.7139 14 20.9544V14.0454C14 13.2877 14.5635 12.9289 15.2513 13.2474L23.1087 16.9154C23.7965 17.2374 23.7965 17.7624 23.1087 18.0844Z"/>
+                            </svg>
+                        </a>
+                        <a href="https://t.me" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+                            <svg width="35" height="35" viewBox="0 0 35 35" fill="white" aria-hidden="true">
+                                <path d="M28 6.41667L4.22914 15.6042C2.62497 16.1875 2.62497 17.2083 3.93747 17.5L9.91664 19.3958L12.25 26.3958C12.5416 27.125 12.3958 27.4167 13.125 27.4167C13.7083 27.4167 14 27.125 14.2916 26.8333C14.4375 26.6875 15.75 25.375 17.2083 23.9167L23.3333 28.4375C24.5 29.0208 25.2291 28.7292 25.5208 27.4167L29.6041 8.31251C30.0416 6.70834 29.0208 5.83334 28 6.41667ZM24.9375 10.7917L13.5625 21.1458L13.125 25.9583L10.7916 18.9583L24.2083 10.5C24.7916 10.0625 25.375 10.3542 24.9375 10.7917Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="divider light"></div>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
